@@ -1,0 +1,189 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid {
+    background-color:#f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+.choice-grid div{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: calc(32.5% - 22px);
+    margin-bottom: 20px;
+    border:1px solid #dcdcdc;
+    padding: 10px;
+  }
+
+
+.choice-grid div img{
+    width: 100%;
+    }
+
+.checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 700px) {
+  header div span{
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  article{
+    width:95%;
+  }
+}
+
+@media(max-width: 620px){
+  section.question-name1 h1, section.question-name2 h1, section.question-name3 h1{
+    font-size: 100%;
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+  }
+}
+
+@media(max-width: 620px){
+  section.question-name1, section.question-name2, section.question-name3{
+    height: 100px;
+  }
+}
+
+@media(max-width: 500px){
+  section.choice-grid div{
+    width: calc(49% - 22px);
+  }
+}
+
+section.choice-grid div.boxselezionato{
+  background-color: #cfe3ff;
+}
+
+section.choice-grid div.boxnonselezionato{
+  opacity: 0.6;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+
+#result {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+
+#titolo {
+  margin-bottom: 18px;
+}
+
+#paragrafo {
+  margin-bottom: 18px;
+}
+
+button {
+  background-color: #cecece;
+  width:100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover{
+  background-color: #e0e0e0;
+
+}
+
+
+.question-name1{
+  background-image: url(pictures/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+
+  text-align: center;
+  padding-top: 10%;
+}
+
+.question-name2{
+  background-image: url(pictures/bandeira-italia.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+
+  text-align: center;
+  padding-top: 10%;
+}
+
+.question-name3{
+  background-image: url(pictures/istockphoto-138026020-612x612.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+
+  text-align: center;
+  padding-top: 10%;
+}
+
+.question-name1 h1, .question-name2 h1, .question-name3 h1{
+  border: solid white;
+  background-color: white;
+  color:black;
+}
+
+#submit{
+  padding: 7px;
+  font-size: 15px;
+  background-color: green;
+}
+
+#submit:hover{
+  background-color: greenyellow;
+  color: inherit;
+}
+
+#brano, #cantante, #canzone{
+  padding:10px;
+  margin:10px;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  cursor:pointer;
+  
+}
+
+
+
+#album-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#album-view .album {
+  margin: 10px;
+  border: 3px solid rgb(162, 240, 18);
+  padding: 5px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#album-view img {
+  max-width: 100%;
+}
+
+#cantante:hover, #canzone:hover, #album:hover{
+  background-color: gray;
+}
